@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  app1:
+    build:
+      context: .
+    environment:
+      - APP_NAME=app1
+    ports:
+      - "5001:5000"
+
+  app2:
+    build:
+      context: .
+    environment:
+      - APP_NAME=app2
+    ports:
+      - "5002:5000"
+
+  app3:
+    build:
+      context: .
+    environment:
+      - APP_NAME=app3
+    ports:
+      - "5003:5000"
